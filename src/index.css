@@ -5,9 +5,148 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App styling */
+.App{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 430px;
+  width: 250px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  margin: 5% auto;
+  background-color: gray;
+  box-shadow: inset 5px 5px 20px #151313;
+  -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(75%, transparent), to(rgba(199, 187, 187, 0.5)));
+}
+
+/* Wheel Styling */
+.container{
+  position: relative;
+  height: 200px;
+  width: 250px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.outer-circle{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-btn{
+  position: absolute;
+  top: 12px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.play-pause-btn{
+  position: absolute;
+  bottom: 10px; 
+  height: 30px;
+  width: 30px;
+}
+
+.prev-btn{
+  position: absolute;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.next-btn{
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.inner-circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.menu-btn, .play-pause-btn, .prev-btn, .next-btn:hover, .inner-circle{
+  cursor: pointer;
+}
+
+/* Screen Styling */
+.screen-container{
+  height: 200px;
+  width: 250px;
+  margin-bottom: 5px;
+  background-image: url(https://i2.wp.com/www.worldwidemusicfactory.com/wp-content/uploads/2016/05/Music-nature0-e1462918049932.jpg?fit=733%2C434&ssl=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu{
+  height: 200px;
+  width: 140px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.heading{
+  padding: 5px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.menu-list{
+  list-style: none;
+  padding-left: 5px;
+  padding-right: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+
+.menu-list li{
+  position: relative;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+.menu-list li:hover{
+  background-color: black;
+  color: white;
+  font-weight: 900;
+}
+
+.menu-list li::after{
+  position: absolute;
+  right: 5px;
+  content: '>';
+  font-size: large;
+  color: lightgray;
+}
+
+.select{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.unselect{
+  color: black;
 }
