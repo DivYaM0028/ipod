@@ -175,7 +175,7 @@ class App extends React.Component{
       submenu: false
     })
     let display = document.getElementById('screen-container');
-    display.style.backgroundImage="url('https://i2.wp.com/www.worldwidemusicfactory.com/wp-content/uploads/2016/05/Music-nature0-e1462918049932.jpg?fit=733%2C434&ssl=1')";
+    display.style.backgroundImage="url('https://inteng-storage.s3.amazonaws.com/images/MARCH/sizes/sound_levitation_md.jpg')";
   }
 
   // hide menu when select the selected item
@@ -205,7 +205,7 @@ class App extends React.Component{
     // if menu is open
     if(menu){
       if(song){
-        display.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRgzAKbtZnNAzsldY7nkFmkr1ZcAAqy4KAsw&usqp=CAU')";
+        display.style.backgroundImage="url('https://inteng-storage.s3.amazonaws.com/images/MARCH/sizes/sound_levitation_md.jpg')";
         this.handlechangestate();
         this.setState({
           submenu : !submenu
@@ -213,17 +213,17 @@ class App extends React.Component{
       }
       else if(games){
         
-        display.style.backgroundImage="url('https://i.pcmag.com/imagery/lineups/06aNG64RXJ5GsJxhTKABxZa-1.fit_lim.v_1588954598.fit_lim.size_955x99999.jpg')";
+        display.style.backgroundImage="url('https://inteng-storage.s3.amazonaws.com/images/MARCH/sizes/sound_levitation_md.jpg')";
         this.handlechangestate();
       }
       else if(video){
         
-        display.style.backgroundImage="url('https://www.upsidelearning.com/blog/wp-content/uploads/2012/10/return-of-video-to-elearning.jpg')";
+        display.style.backgroundImage="url('https://inteng-storage.s3.amazonaws.com/images/MARCH/sizes/sound_levitation_md.jpg')";
         this.handlechangestate();
       }
       else if(setting){
         
-        display.style.backgroundImage="url('https://www.metfone.com.kh/Uploads/images/product/Settings-Logo.jpg')";
+        display.style.backgroundImage="url('https://inteng-storage.s3.amazonaws.com/images/MARCH/sizes/sound_levitation_md.jpg')";
         this.handlechangestate();
       }
     }
@@ -231,12 +231,12 @@ class App extends React.Component{
     // if SUB-MENU is open for allsong and artist
     if(submenu){
       if(allsong){
-        display.style.backgroundImage="url('https://i.pinimg.com/originals/71/cd/b8/71cdb84744205714a1416b19051e05b7.jpg')";
+        display.style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/en/b/b4/Shape_Of_You_%28Official_Single_Cover%29_by_Ed_Sheeran.png')";
         this.handleSubMenuState();
       }
       
       if(artist){
-        display.style.backgroundImage="url('https://1.bp.blogspot.com/-C6rW3guqtgs/XbxvPtc4WoI/AAAAAAAAAyE/aI2LISQI1gAY-HIBy-Kiz_9evX5fXKXSwCLcBGAsYHQ/s640/atif%252Cblog%252Cadbitechno.jpg')";
+        display.style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/en/b/b4/Shape_Of_You_%28Official_Single_Cover%29_by_Ed_Sheeran.png')";
         this.handleSubMenuState();
       }
     }
